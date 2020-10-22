@@ -32,9 +32,6 @@ const Title = styled.h3`
 `;
 
 class Card extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     console.log(this.props);
@@ -42,7 +39,7 @@ class Card extends React.Component {
     return (
       <Wrapper>
         <Title>{name}</Title>
-        <img src={image}/>
+        <img src={image} alt={name}/>
         <Info> <Label>orign:</Label> {origin.name}</Info>
         <Info><Label>location:</Label> {location.name}</Info>
         <Info><Label>status:</Label> {status}</Info>
